@@ -13,6 +13,61 @@ st.logo("https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg")
 st.title("Notion theme")
 
 
+if st.checkbox("Enable CSS hacks", True):
+    st.html(
+        """
+        <style>
+        .stCode pre {
+            background-color: #F7F6F3;
+        }
+        
+        h1 {
+            font-size: 40px !important;
+            font-weight: 700 !important;
+        }
+        
+        h2 {
+            font-size: 30px !important;
+            font-weight: 600 !important;
+        }
+        
+        h3 {
+            font-size: 24px !important;
+            font-weight: 600 !important;
+        }
+        
+        h4 {
+            font-size: 20px !important;
+            font-weight: 600 !important;
+        }
+        
+        
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentInfo"]) {
+            background-color: #E8F4F8 !important;
+            color: #37352f !important;
+        }
+        
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentWarning"]) {
+            background-color: #FCF3DC !important;
+            color: #37352f !important;
+        }
+        
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentSuccess"]) {
+            background-color: #EDF3ED !important;
+            color: #37352f !important;
+        }
+        
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentError"]) {
+            background-color: #FDEBEC !important;
+            color: #37352f !important;
+        }
+        
+        </style>
+        """
+    )
+    
+
+
 def page1():
     pass
 
