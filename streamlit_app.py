@@ -8,7 +8,7 @@ import plotly.express as px
 import pydeck as pdk
 import streamlit as st
 
-st.set_page_config("Notion theme", "🎈", initial_sidebar_state="collapsed")
+st.set_page_config("Notion theme", "✍️", initial_sidebar_state="collapsed")
 st.logo("https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg")
 st.title("Notion theme")
 
