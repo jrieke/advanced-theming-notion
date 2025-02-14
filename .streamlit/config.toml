@@ -2,14 +2,6 @@
 enableStaticServing = true
 
 [theme]
-# Notion
-# What's missing/doesn't look great:
-# - ✅ code background is not visible, would want #F7F6F3
-# - hover color on selectbox etc is not visible, would want #f3f3f3
-# - active page background should be #F0F0EF
-# - ✅ colored text and callouts should be adapted to Notion colors (uses black text by default!)
-# - ✅ adapting font sizes of header levels would be nice (weights are actually the same!)
-# - tables could be made just like in Notion, with straight corners and #E9E9E7
 primaryColor = "#2483E2"
 backgroundColor = "#ffffff"
 secondaryBackgroundColor = "#ffffff"
