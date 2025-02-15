@@ -66,6 +66,26 @@ if st.checkbox("Enable CSS hacks", True):
             color: #37352f !important;
         }
         
+        /* First page in sidebar nav */
+        [data-testid="stSidebarNav"] li:first-of-type a {
+            background-color: #f0f0ef !important;
+        }
+        [data-testid="stSidebarNav"] li:first-of-type a:hover {
+            background-color: #e8e8e8 !important;
+        }
+        [data-testid="stSidebarNav"] li:first-of-type a span {
+            color: rgb(29, 27, 22) !important;
+        }
+        
+        /* Other pages in sidebar nav */
+        [data-testid="stSidebarNav"] li a:hover {
+            background-color: #f0f0ef !important;
+        }
+        [data-testid="stSidebarNav"] li a span {
+            color: rgb(95, 94, 91) !important;
+            font-weight: 500 !important;
+        }
+        
         </style>
         """
     )
