@@ -84,6 +84,7 @@ if st.checkbox("Enable CSS hacks", True):
         [data-testid="stSidebarNav"] li a span {
             color: rgb(95, 94, 91) !important;
             font-weight: 500 !important;
+            font-size: 14px !important;
         }
         
         </style>
