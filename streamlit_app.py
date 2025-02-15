@@ -21,6 +21,10 @@ if st.checkbox("Enable CSS hacks", True):
             background-color: #F7F6F3;
         }
         
+        .stCode span, .stHelp div, .stJson div, code {
+            font-size: 13.6px !important;
+        }
+        
         h1 {
             font-size: 40px !important;
             font-weight: 700 !important;
