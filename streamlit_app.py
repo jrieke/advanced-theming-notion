@@ -87,6 +87,14 @@ if st.checkbox("Enable CSS hacks", True):
             font-size: 14px !important;
         }
         
+        /* Headers in sidebar nav */
+        [data-testid="stSidebarNav"] header {
+            font-size: 12px !important;
+            font-weight: 500 !important;
+            color: rgb(145, 145, 142) !important;
+        }
+        
+        
         </style>
         """
     )
