@@ -14,85 +14,119 @@ st.title("Notion theme")
 
 
 if st.checkbox("Enable CSS hacks", True):
+    codeBackgroundColor = "#F7F6F3"
+    codeFontSize = "13.6px"
+    
+    titleFontSize = "40px"
+    titleFontWeight = "700"
+    headerFontSize = "30px"
+    headerFontWeight = "600"
+    subheaderFontSize = "24px"
+    subheaderFontWeight = "600"
+    h4FontSize = "20px"
+    h4FontWeight = "600"
+    
+    infoBackgroundColor = "#E8F4F8"
+    infoTextColor = "#37352f"
+    warningBackgroundColor = "#FCF3DC"
+    warningTextColor = "#37352f"
+    successBackgroundColor = "#EDF3ED"
+    successTextColor = "#37352f"
+    errorBackgroundColor = "#FDEBEC"
+    errorTextColor = "#37352f"
+    
+    pageHoverBackgroundColor = "#F0F0EF"
+    pageTextColor = "rgb(95, 94, 91)"
+    pageFontWeight = "500"
+    pageFontSize = "14px"
+    
+    activePageBackgroundColor = "#F0F0EF"
+    activePageHoverBackgroundColor = "#E8E8E8"
+    activePageTextColor = "#2D2B22"
+    
+    pageHeaderFontSize = "12px"
+    pageHeaderFontWeight = "500"
+    pageHeaderColor = "rgb(145, 145, 142)"
+    
     st.html(
-        """
+        f"""
         <style>
-        .stCode pre {
-            background-color: #F7F6F3;
-        }
+        .stCode pre {{
+            background-color: {codeBackgroundColor};
+        }}
         
-        .stCode span, .stHelp div, .stJson div, code {
-            font-size: 13.6px !important;
-        }
+        .stCode span, .stHelp div, .stJson div, code {{
+            font-size: {codeFontSize} !important;
+        }}
         
-        h1 {
-            font-size: 40px !important;
-            font-weight: 700 !important;
-        }
+        h1 {{
+            font-size: {titleFontSize} !important;
+            font-weight: {titleFontWeight} !important;
+        }}
         
-        h2 {
-            font-size: 30px !important;
-            font-weight: 600 !important;
-        }
+        h2 {{
+            font-size: {headerFontSize} !important;
+            font-weight: {headerFontWeight} !important;
+        }}
         
-        h3 {
-            font-size: 24px !important;
-            font-weight: 600 !important;
-        }
+        h3 {{
+            font-size: {subheaderFontSize} !important;
+            font-weight: {subheaderFontWeight} !important;
+        }}
         
-        h4 {
-            font-size: 20px !important;
-            font-weight: 600 !important;
-        }
+        h4 {{
+            font-size: {h4FontSize} !important;
+            font-weight: {h4FontWeight} !important;
+        }}
         
         
-        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentInfo"]) {
-            background-color: #E8F4F8 !important;
-            color: #37352f !important;
-        }
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentInfo"]) {{
+            background-color: {infoBackgroundColor} !important;
+            color: {infoTextColor} !important;
+        }}
         
-        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentWarning"]) {
-            background-color: #FCF3DC !important;
-            color: #37352f !important;
-        }
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentWarning"]) {{
+            background-color: {warningBackgroundColor} !important;
+            color: {warningTextColor} !important;
+        }}
         
-        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentSuccess"]) {
-            background-color: #EDF3ED !important;
-            color: #37352f !important;
-        }
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentSuccess"]) {{
+            background-color: {successBackgroundColor} !important;
+            color: {successTextColor} !important;
+        }}
         
-        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentError"]) {
-            background-color: #FDEBEC !important;
-            color: #37352f !important;
-        }
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentError"]) {{
+            background-color: {errorBackgroundColor} !important;
+            color: {errorTextColor} !important;
+        }}
         
         /* First page in sidebar nav */
-        [data-testid="stSidebarNav"] li:first-of-type a {
-            background-color: #f0f0ef !important;
-        }
-        [data-testid="stSidebarNav"] li:first-of-type a:hover {
-            background-color: #e8e8e8 !important;
-        }
-        [data-testid="stSidebarNav"] li:first-of-type a span {
-            color: rgb(29, 27, 22) !important;
-        }
+        [data-testid="stSidebarNav"] li:first-of-type a {{
+            background-color: {activePageBackgroundColor} !important;
+        }}
+        [data-testid="stSidebarNav"] li:first-of-type a:hover {{
+            background-color: {activePageHoverBackgroundColor} !important;
+        }}
+        [data-testid="stSidebarNav"] li:first-of-type a span {{
+            color: {activePageTextColor} !important;
+        }}
         
         /* Other pages in sidebar nav */
-        [data-testid="stSidebarNav"] li a:hover {
-            background-color: #f0f0ef !important;
-        }
-        [data-testid="stSidebarNav"] li a span {
-            color: rgb(95, 94, 91) !important;
-            font-weight: 500 !important;
-            font-size: 14px !important;
-        }
+        [data-testid="stSidebarNav"] li a:hover {{
+            background-color: {pageHoverBackgroundColor} !important;
+        }}
+        [data-testid="stSidebarNav"] li a span {{
+            color: {pageTextColor} !important;
+            font-weight: {pageFontWeight} !important;
+            font-size: {pageFontSize} !important;
+        }}
         
         /* Headers in sidebar nav */
-        [data-testid="stSidebarNav"] header {
-            font-size: 12px !important;
-            font-weight: 500 !important;
-            color: rgb(145, 145, 142) !important;
-        }
+        [data-testid="stSidebarNav"] header {{
+            font-size: {pageHeaderFontSize} !important;
+            font-weight: {pageHeaderFontWeight} !important;
+            color: {pageHeaderColor} !important;
+        }}
         
         
         </style>
