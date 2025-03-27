@@ -14,7 +14,6 @@ st.title("Notion theme")
 
 
 if st.checkbox("Enable CSS hacks", True):
-    codeBackgroundColor = "#F7F6F3"
     codeFontSize = "13.6px"
     
     titleFontSize = "40px"
@@ -51,10 +50,6 @@ if st.checkbox("Enable CSS hacks", True):
     st.html(
         f"""
         <style>
-        .stCode pre {{
-            background-color: {codeBackgroundColor};
-        }}
-        
         .stCode span, .stHelp div, .stJson div, code {{
             font-size: {codeFontSize} !important;
         }}
