@@ -16,6 +16,29 @@ codeBackgroundColor = "#F7F6F3"
 codeFontSize = "13.6px"
 headingFontSizes = ["40px", "30px", "24px", "20px"]
 headingFontWeights = ["700", "600", "600", "600"]
+chartCategoricalColors = [
+    "#2d99eb",
+    "#e7b533",
+    "#62bd8f",
+    "#a57ad9",
+    "#ea8b43",
+    "#de66a6",
+    "#02b5d0",
+    "#e05f58",
+]
+chartSequentialColors = [
+    "#e1f0fc",
+    "#d2e8fa",
+    "#c3e1f9",
+    "#add3f6",
+    "#9accf5",
+    "#85c0f3",
+    "#70b7f1",
+    "#50a8ec",
+    "#2d99eb",
+    "#198ee9",
+]
+
 
 [theme.sidebar]
 backgroundColor = "#f8f8f7"
