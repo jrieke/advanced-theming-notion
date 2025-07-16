@@ -14,16 +14,6 @@ st.title("Notion theme")
 
 
 if st.checkbox("Enable CSS hacks", True):
-    codeFontSize = "13.6px"
-    
-    titleFontSize = "40px"
-    titleFontWeight = "700"
-    headerFontSize = "30px"
-    headerFontWeight = "600"
-    subheaderFontSize = "24px"
-    subheaderFontWeight = "600"
-    h4FontSize = "20px"
-    h4FontWeight = "600"
     
     infoBackgroundColor = "#E8F4F8"
     infoTextColor = "#37352f"
@@ -50,31 +40,6 @@ if st.checkbox("Enable CSS hacks", True):
     st.html(
         f"""
         <style>
-        .stCode span, .stHelp div, .stJson div, code {{
-            font-size: {codeFontSize} !important;
-        }}
-        
-        h1 {{
-            font-size: {titleFontSize} !important;
-            font-weight: {titleFontWeight} !important;
-        }}
-        
-        h2 {{
-            font-size: {headerFontSize} !important;
-            font-weight: {headerFontWeight} !important;
-        }}
-        
-        h3 {{
-            font-size: {subheaderFontSize} !important;
-            font-weight: {subheaderFontWeight} !important;
-        }}
-        
-        h4 {{
-            font-size: {h4FontSize} !important;
-            font-weight: {h4FontWeight} !important;
-        }}
-        
-        
         [data-testid="stAlertContainer"]:has([data-testid="stAlertContentInfo"]) {{
             background-color: {infoBackgroundColor} !important;
             color: {infoTextColor} !important;
